@@ -1,0 +1,163 @@
+$light-vivid-blue: #007cfd; // This is a placeholder value, replace with your desired color
+
+html,
+* {
+  font-family: "Argentum Novus Light", sans-serif;
+}
+
+* {
+  overflow: hidden;
+}
+
+.full-page-image {
+  background-image: url("../../../assets/37-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 30%; // Centraliza horizontalmente
+    transform: translate(-59%, -50%);
+    text-align: left;
+
+    color: white;
+
+    h1 {
+      font-weight: bold;
+      font-family: "Kollektif", sans-serif;
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-size: 3em;
+    }
+    h3 {
+      margin-top: 0;
+      padding-top: 0;
+      font-weight: lighter;
+      font-family: "Argentum Novus ExtraLight", sans-serif;
+      font-size: 2em;
+    }
+    .btn {
+      margin-top: 0;
+      padding-top: 0;
+      background-color: $light-vivid-blue;
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 1.25em;
+      height: 45px;
+      transition: 0.3s ease;
+      &:hover {
+        font-size: 18px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll!important; // Isso previne a rolagem
+}
+
+/* SeuComponente.component.css */
+.container {
+  position: absolute;
+  background-color: #007cfd; /* Cor light vivid blue */
+  border-radius: 45px; /* Bordas arredondadas */
+  padding: 35px;
+  top: 20%;
+  right: 20%;
+  color: white; /* Texto branco */
+  width: 450px; /* Largura do quadrado */
+  height: 430px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Reitam", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.btn-adjust {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid white; /* Borda inferior branca */
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  width: 90%;
+}
+
+.limits {
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+
+  span {
+    width: 77px;
+  }
+}
+
+.btn-simulate {
+  background-color: white;
+  color: #007cfd; /* Texto azul da variável $light vivid blue */
+  border: none;
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 10px 20px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  width: 94%; /* 80% da largura do quadrado */
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 19px;
+  letter-spacing: 0.5px;
+  padding-right: 0;
+  span {
+    font-family: "Reitam", sans-serif;
+    width: 100%;
+    margin-left: 19%;
+    margin-right: 0;
+    text-align: right;
+  }
+}
+.square {
+  position: absolute;
+  top: 50%; /* Ajuste conforme necessário */
+  right: 0; /* Alinha à direita do container .content */
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  width: 200px; /* Largura do quadrado */
+  height: 200px; /* Altura do quadrado */
+  border-radius: 25px; /* Bordas arredondadas */
+  background-color: #007cfd; /* Cor light vivid blue */
+}

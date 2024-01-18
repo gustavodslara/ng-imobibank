@@ -1,0 +1,30 @@
+<div class="full-page-image">
+  <div class="row">
+    <div class="col" style="max-width: 700px !important">
+      <div class="content">
+        <h1>Empréstimo consignado</h1>
+        <h3>para sua empresa.</h3>
+      </div>
+    </div>
+    <div class="col">
+      <div class="container">
+        <h1>EU PRECISO DE</h1>
+        <div class="input-group">
+          <button class="btn-adjust" (click)="decrementar()">-</button>
+          <input
+            type="text"
+            name="valorFormatado"
+            [(ngModel)]="valorFormatado"
+            (input)="onValorInput($event)"
+          />
+          <button class="btn-adjust" (click)="incrementar()">+</button>
+        </div>
+        <div class="limits">
+          <span>MIN: R$300</span>
+          <span>MAX: R$70.000</span>
+        </div>
+        <button [routerLink]="['/login']" class="btn-simulate">Simule agora<span>></span></button>
+      </div>
+    </div>
+  </div>
+</div>

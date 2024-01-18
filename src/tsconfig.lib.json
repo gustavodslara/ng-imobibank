@@ -1,0 +1,35 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "typeRoots": ["src/angular-fullpage/lib/fullpage.interface.ts"],
+    "outDir": "../out-tsc/lib",
+    "target": "ES2022",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "declaration": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "types": [],
+    "lib": [
+      "dom",
+      "ES2022"
+    ]
+  },
+  "angularCompilerOptions": {
+    "annotateForClosureCompiler": true,
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true,
+    "compilationMode": "partial",
+    "enableIvy": true
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}
